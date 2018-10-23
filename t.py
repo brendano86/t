@@ -326,6 +326,7 @@ def _main():
     except BadFile as e:
         sys.stderr.write('%s - %s\n' % (e.problem, e.path))
 
+#Add gitlab as backup storage
 
 if __name__ == '__main__':
     _main()
