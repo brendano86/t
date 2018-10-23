@@ -1,4 +1,5 @@
-syntax: glob
+.vscode
+
 *.pyc
 .DS_Store
 *.un~
