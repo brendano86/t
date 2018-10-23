@@ -8,7 +8,7 @@ setup(
     version='0.0.0',
     author="Brendan O'Leary",
     author_email='boleary@olearycrew.com',
-    url='http://bitbucket.org/sjl/t',
+    url='https://gitlab.com/brendan/t-gl',
     py_modules=['t'],
     entry_points={
         'console_scripts': [

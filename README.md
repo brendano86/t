@@ -22,4 +22,10 @@ We also love GitLab...and would love the ability to use GitLab issues along with
 
     alias t='python ~/path/to/t.py --task-dir ~/tasks --list tasks'
 
+1. Set up yo env
+
+GITLAB_API_ENDPOINT=https://gitlab.com/api/v4
+GITLAB_API_PRIVATE_TOKEN=XXXXX
+GITLAB_TAKS_PROJECT_ID=9018148
+
 ## (How do) Developing

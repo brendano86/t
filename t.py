@@ -8,6 +8,8 @@ import os, re, sys, hashlib
 from operator import itemgetter
 from optparse import OptionParser, OptionGroup
 
+from helpers import api
+
 
 class InvalidTaskfile(Exception):
     """Raised when the path to a task file already exists as a directory."""
@@ -176,6 +178,8 @@ class TaskDict(object):
         """Add a new, unfinished task with the given summary text."""
         task_id = _hash(text)
         self.tasks[task_id] = {'id': task_id, 'text': text}
+        
+        #Call GitLab friends
 
     def edit_task(self, prefix, text):
         """Edit the task with the given prefix.
