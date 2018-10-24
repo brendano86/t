@@ -14,18 +14,35 @@ We also love GitLab...and would love the ability to use GitLab issues along with
 
 ## (How) Installation
 
+### With pip
+
+```
+pip install git+https://gitlab.com/brendan/t-gl.git
+```
+
+### From Source
+
 1. Download the source code
 > TODO: Add details
 1. Make a repository for your tasks to live in on GitLab
 1. Clone that repository as well
+
+### Configuration
+
 1. Link the two in your `./bashrc` with
+    ```
+    # From Pip
+    alias t='t --task-dir ~/tasks --list tasks'
 
+    # From Source
     alias t='python ~/path/to/t.py --task-dir ~/tasks --list tasks'
-
+    ```
 1. Set up yo env
 
-GITLAB_API_ENDPOINT=https://gitlab.com/api/v4
-GITLAB_API_PRIVATE_TOKEN=XXXXX
-GITLAB_TAKS_PROJECT_ID=9018148
-
+    ```
+    GITLAB_API_ENDPOINT=https://gitlab.com/api/v4
+    GITLAB_API_PRIVATE_TOKEN=XXXXX
+    GITLAB_TASK_PROJECT_ID=9018148
+    ```
+    
 ## (How do) Developing
