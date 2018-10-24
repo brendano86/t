@@ -17,7 +17,8 @@ setup(
     author_email='boleary@olearycrew.com',
     url='https://gitlab.com/brendan/t-gl',
     install_requires=requirements,
-    py_modules=['t', 'helpers'],
+    packages=['helpers'],
+    py_modules=['t'],
     entry_points={
         'console_scripts': [
             't = t:_main',
